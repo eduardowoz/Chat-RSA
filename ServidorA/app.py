@@ -165,8 +165,7 @@ def enviar_mensagem(mensagem):
         mensagem_criptografada = criptografar(mensagem, chave_publica_parceiro)
         hash_mensagem = gerar_hash(mensagem)
         
-        # ######################################################################################
-        # ##!! PONTO DA DEFESA: Descomente a linha abaixo para printar o texto criptografado !!##
+        # printar o texto criptografado !!##
         # print(f"[DEBUG] Texto Criptografado (nº inteiro) enviado: {mensagem_criptografada}")
         # ######################################################################################
 
