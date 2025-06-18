@@ -165,9 +165,9 @@ def enviar_mensagem(mensagem):
         mensagem_criptografada = criptografar(mensagem, chave_publica_parceiro)
         hash_mensagem = gerar_hash(mensagem)
         
-        # printar o texto criptografado !!##
+        # printar o texto criptografado 
         # print(f"[DEBUG] Texto Criptografado (nº inteiro) enviado: {mensagem_criptografada}")
-        # ######################################################################################
+        # #############################
 
         payload = f"{username}###{mensagem_criptografada}###{hash_mensagem}"
         headers = {'Content-Type': 'text/plain'}
